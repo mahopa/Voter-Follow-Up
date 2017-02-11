@@ -1,0 +1,25 @@
+{
+  "name": "voter-follow-up",
+  "version": "0.0.1",
+  "description": "Application to capture voter info for later communication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahopa/Voter-Follow-Up.git"
+  },
+  "keywords": [
+    "democracy"
+  ],
+  "author": "Alex Miller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mahopa/Voter-Follow-Up/issues"
+  },
+  "homepage": "https://github.com/mahopa/Voter-Follow-Up#readme",
+  "dependencies": {
+    "twilio": "^2.11.1"
+  }
+}
