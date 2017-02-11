@@ -2,9 +2,11 @@
   "name": "voter-follow-up",
   "version": "0.0.1",
   "description": "Application to capture voter info for later communication",
-  "main": "index.js",
+  "main": "app/dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app/dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon --watch app/dist app/dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,13 @@
   },
   "homepage": "https://github.com/mahopa/Voter-Follow-Up#readme",
   "dependencies": {
+    "hapi": "^16.1.0",
     "twilio": "^2.11.1"
+  },
+  "devDependencies": {
+    "@types/hapi": "^16.0.0",
+    "nodemon": "^1.11.0",
+    "tslint": "^4.4.2",
+    "typescript": "^2.1.6"
   }
 }
