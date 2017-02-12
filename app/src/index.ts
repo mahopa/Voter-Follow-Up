@@ -3,13 +3,10 @@
  */
 import * as Hapi from 'hapi';
 import * as requestHandlers from './request-handlers';
+import * as Server from './server';
 
 const port = 1337;
-const server = new Hapi.Server();
-
-server.connection({
-    port: port
-});
+const server = Server.init(port);
 
 server.route({
    method: 'GET',

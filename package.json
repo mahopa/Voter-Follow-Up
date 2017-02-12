@@ -5,7 +5,7 @@
   "main": "app/dist/index.js",
   "scripts": {
     "start": "node app/dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tsc && mocha ./app/dist/**/*.spec.js",
     "watch": "nodemon --watch app/dist app/dist/index.js"
   },
   "repository": {
@@ -28,6 +28,9 @@
   },
   "devDependencies": {
     "@types/hapi": "^16.0.0",
+    "@types/mocha": "^2.2.39",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
     "nodemon": "^1.11.0",
     "tslint": "^4.4.2",
     "typescript": "^2.1.6"
