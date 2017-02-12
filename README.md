@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mahopa/Voter-Follow-Up.svg?branch=master)](https://travis-ci.org/mahopa/Voter-Follow-Up)
+
 # Voter-Follow-Up
 Tool to help follow up with voters after registration
 
