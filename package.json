@@ -23,6 +23,7 @@
   "homepage": "https://github.com/mahopa/Voter-Follow-Up#readme",
   "dependencies": {
     "hapi": "^16.1.0",
+    "lowdb": "^0.15.4",
     "twilio": "^2.11.1"
   },
   "devDependencies": {
