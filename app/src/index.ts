@@ -20,6 +20,12 @@ server.route({
     handler: requestHandlers.smsHandler
 });
 
+server.route({
+   method: 'GET',
+    path: '/healthcheck',
+    handler: requestHandlers.healthCheckHandler
+});
+
 server.start(() => {
     console.log(`Server started on port ${port}`);
 });

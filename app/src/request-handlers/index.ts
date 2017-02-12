@@ -7,4 +7,8 @@ export const indexHandler = (request: Hapi.Request, reply: Hapi.IReply) => {
     reply(`Yep it's a server`);
 };
 
+export const healthCheckHandler = (request: Hapi.Request, reply: Hapi.IReply) => {
+    return reply(200);
+}
+
 export { smsHandler } from './sms-handler';
