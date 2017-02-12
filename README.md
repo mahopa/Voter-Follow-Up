@@ -2,7 +2,7 @@
 Tool to help follow up with voters after registration
 
 ## Overview
-App lets voters opt-in via SMS to communications from League of Women Voters at voter registration drives
+App lets voters opt-in via SMS to communications at voter registration drives
 
 ### Process Flow
 
@@ -10,7 +10,7 @@ App lets voters opt-in via SMS to communications from League of Women Voters at 
 - User sends text to {app-sms-number} with {user-email}
 - Twilio magic
 - App captures {user-email} {user-phone}
-- Stores info (Db?, Forward directly to LWV?)
+- Stores info (Db?, Forward directly to org?)
 - App sends text confirmation to {user-phone}
 - Twilio magic
 - User gets SMS confirmation
