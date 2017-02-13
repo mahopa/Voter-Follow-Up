@@ -2,10 +2,11 @@
  * Created by alexandermiller on 2/11/17.
  */
 import * as Hapi from 'hapi';
+import {conf as config, conf} from './config';
 import * as requestHandlers from './request-handlers';
 import * as Server from './server';
 
-const port = 1337;
+const port = conf.get('port');
 const server = Server.init(port);
 
 server.route({
