@@ -1,7 +1,7 @@
 "use strict";
-const config_1 = require("./config");
-const requestHandlers = require("./request-handlers");
-const Server = require("./server");
+const config_1 = require('./config');
+const requestHandlers = require('./request-handlers');
+const Server = require('./server');
 const port = config_1.conf.get('port');
 const server = Server.init(port);
 server.route({

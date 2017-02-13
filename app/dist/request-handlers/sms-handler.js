@@ -1,5 +1,5 @@
 "use strict";
-const emailer = require("../email");
+const emailer = require('../email');
 // untypes
 let twilio = require('twilio');
 exports.smsHandler = (request, reply) => {
