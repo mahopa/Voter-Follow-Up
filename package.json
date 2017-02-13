@@ -26,7 +26,8 @@
     "hapi": "^16.1.0",
     "lowdb": "^0.15.4",
     "nodemailer": "^3.0.2",
-    "twilio": "^2.11.1"
+    "twilio": "^2.11.1",
+    "typescript": "^2.1.6"
   },
   "devDependencies": {
     "@types/convict": "^0.6.33",
@@ -36,7 +37,6 @@
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
     "nodemon": "^1.11.0",
-    "tslint": "^4.4.2",
-    "typescript": "^2.1.6"
+    "tslint": "^4.4.2"
   }
 }
