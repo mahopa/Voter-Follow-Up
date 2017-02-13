@@ -3,15 +3,18 @@
  */
 import * as Hapi from 'hapi';
 
-import * as emailer from '../email';
+import {IProcessSMS} from '../Interfaces/IProcessSMS';
+
 // untypes
 let twilio = require('twilio');
 
-export const smsHandler = (request: Hapi.Request, reply: Hapi.IReply) => {
+export const smsHandler = (smsProcessor: IProcessSMS) => {
+    return (request: Hapi.Request, reply: Hapi.IReply) => {
     console.log(request.payload);
-    emailer.addSms(request.payload);
+    smsProcessor.addSms(request.payload);
     const twiml = twilio.TwimlResponse();
     twiml.message('Message Accepted');
     console.log(twiml);
     return reply(twiml.toString()).type('text/xml');
+    };
 };

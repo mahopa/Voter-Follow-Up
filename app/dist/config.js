@@ -2,7 +2,7 @@
 /**
  * Created by alexandermiller on 2/12/17.
  */
-const convict = require('convict');
+const convict = require("convict");
 // Define a schema
 const conf = convict({
     env: {

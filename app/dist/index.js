@@ -1,7 +1,11 @@
 "use strict";
-const config_1 = require('./config');
-const requestHandlers = require('./request-handlers');
-const Server = require('./server');
+/**
+ * Created by alexandermiller on 2/11/17.
+ */
+const config_1 = require("./config");
+const requestHandlers = require("./request-handlers");
+const Server = require("./server");
+const emailer = require("./email");
 const port = config_1.conf.get('port');
 const server = Server.init(port);
 server.route({
@@ -12,7 +16,7 @@ server.route({
 server.route({
     method: 'POST',
     path: '/sms',
-    handler: requestHandlers.smsHandler
+    handler: requestHandlers.smsHandler(emailer)
 });
 server.route({
     method: 'GET',

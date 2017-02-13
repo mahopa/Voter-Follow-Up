@@ -1,10 +1,10 @@
 /**
  * Created by alexandermiller on 2/11/17.
  */
-import * as Hapi from 'hapi';
 import {conf as config, conf} from './config';
 import * as requestHandlers from './request-handlers';
 import * as Server from './server';
+import * as emailer from './email';
 
 const port = conf.get('port');
 const server = Server.init(port);
@@ -18,7 +18,7 @@ server.route({
 server.route({
     method: 'POST',
     path: '/sms',
-    handler: requestHandlers.smsHandler
+    handler: requestHandlers.smsHandler(emailer)
 });
 
 server.route({
