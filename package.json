@@ -4,7 +4,7 @@
   "description": "Application to capture voter info for later communication",
   "main": "app/dist/index.js",
   "scripts": {
-    "start": "./node_modules/.bin/tsc && node /dist/index.js",
+    "start": "node /dist/index.js",
     "test": "tsc && mocha ./app/dist/**/*.spec.js",
     "watch": "nodemon --watch app/dist app/dist/index.js"
   },
@@ -26,8 +26,7 @@
     "hapi": "^16.1.0",
     "lowdb": "^0.15.4",
     "nodemailer": "^3.0.2",
-    "twilio": "^2.11.1",
-    "typescript": "^2.1.6"
+    "twilio": "^2.11.1"
   },
   "devDependencies": {
     "@types/convict": "^0.6.33",
@@ -37,6 +36,7 @@
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
     "nodemon": "^1.11.0",
-    "tslint": "^4.4.2"
+    "tslint": "^4.4.2",
+    "typescript": "^2.1.6"
   }
 }

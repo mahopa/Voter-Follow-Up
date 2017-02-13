@@ -1,5 +1,4 @@
 .idea/
-app/dist/*
 yarn-error.log
 node_modules/*
 ngrok
