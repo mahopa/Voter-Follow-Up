@@ -14,14 +14,12 @@ let transporter = nodemailer.createTransport({
 let mailOptions = {
     from: `"Sender Name" <${config.get('email.address')}>`, // sender address
     to: config.get('email.address'), // list of receivers
-    subject: 'Hello ✔', // Subject line
-    text: 'Hello world ?', // plain text body
-    // html: '<b>Hello world ?</b>' // html body
+    subject: 'Text Enrollment Received', // Subject line
+    text: ''
 };
 
 const addSms = (sms) => {
     mailOptions.text = JSON.stringify(sms);
-    // mailOptions.text = 'Can I replace this?';
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             return console.log(error);
