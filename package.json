@@ -1,6 +1,6 @@
 {
   "name": "voter-follow-up",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Application to capture voter info for later communication",
   "main": "app/dist/index.js",
   "scripts": {
