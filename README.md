@@ -23,3 +23,39 @@ App lets voters opt-in via SMS to communications at voter registration drives
 [Project Idea on Sketch City] (https://github.com/sketch-city/project-ideas/issues/66)
 
 [Twilio Node Quickstart](https://www.twilio.com/docs/quickstart/node/programmable-sms)
+
+
+## Ideas
+
+
+Meeting Notes: 2/27/2017
+
+    Follow up questions with users
+
+    - Early Voting
+
+    Candidate conversations & debates
+
+    Ballot by mail -> Application & Return
+
+    Which of these would you like reminders for
+
+        Committees & Meetings and State Issues
+
+    Email
+        5 minute survey, voter guide, candidate, early, regular voting & power user
+
+
+    System Integrations
+        Action Network => CRM for voter information
+        CSV
+    
+    Needs tp be deployable independenty
+        System deployable to different locations
+        Seperate Calendars
+
+    MVP Ideas
+    
+    City of Pasedena => Voter turn out
+
+    MVP City of Pasedena

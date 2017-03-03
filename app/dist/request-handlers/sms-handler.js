@@ -1,5 +1,5 @@
 "use strict";
-const smsParser_1 = require('../smsParser');
+const smsParser_1 = require("../smsParser");
 // untypes
 let twilio = require('twilio');
 const extractSMSData = (sms, callback) => {
